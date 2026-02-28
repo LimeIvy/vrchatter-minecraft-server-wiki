@@ -10,7 +10,8 @@ export const SetupTab = memo(function SetupTab() {
       <div className="bg-[#c6c6c6] text-[#3f3f3f] p-4 border-2 border-black font-bold leading-relaxed shadow-[inset_2px_2px_0px_0px_#ffffff,inset_-2px_-2px_0px_0px_#555555]">
         VRChatter鯖へようこそ！<br />
         ここでは、皆さんがサーバーへ遊びに来れるよう、一つずつ丁寧に導入手順を解説していきます。<br />
-        まずは、サーバー専用のModパック（ZIP形式）をダウンロードしておきましょう！
+        まずは、サーバー専用のModパック（ZIP形式）をダウンロードします！<br />
+        下のボタンの遷移先ページから、VRChatter.zipをダウンロードしておきましょう！
       </div>
 
       <div className="flex justify-center my-4">
