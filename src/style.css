@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-minecraft antialiased bg-mc-dirt tracking-widest leading-relaxed;
+    margin: 0;
+    min-width: 320px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAABcdv1xAAABBUlEQVR4AWP4z8BAF4AASOswAAmgAjD9D8NQHgYAoQDGwP8HAGoH/H8YCMN0PwBQR8AYAAAyhOl/GIbxfiAARgEMAACAIdP/MAzj/UCAMgwAAABhpv9hGMb7gQAFGAAAAIUw/Q/DMN4PBNgZAAAAoAqm/2EYxvuBAEcYAACA4pj+h2EY7wcCVGEAAACEwvQ/DMN4PxCgCQMAACAQpv9hGMb7gQBNGAAAAAFh+h/Gw24uQxAAAIAAAACCwP8HAGYh/A8DYZjuBwDqCBgDAACCZPofhmG8HwgARgEMAABAEkz/wzCM9wMBqjAAAAAhw/wxGAAAAICBMn0Mw3gfEKAMAwAAwJAw/QzDeD8QYAwDABeU8E0d/FumAAAAAElFTkSuQmCC");
+    background-size: 64px 64px;
+    image-rendering: pixelated;
+    color: white;
+  }
+}
+
+@layer components {
+  /* Minecraft GUI Base Panel (Grey background with light/dark inline borders) */
+  .mc-panel {
+    @apply bg-mc-bg text-mc-text relative;
+    border: 3px solid #000;
+    box-shadow:
+      inset 3px 3px 0px 0px #ffffff,
+      inset -3px -3px 0px 0px #555555;
+    image-rendering: pixelated;
+  }
+
+  /* Text utility for classic white text with dark shadow */
+  .mc-text-shadow {
+    text-shadow: 2px 2px 0px #3f3f3f;
+  }
+
+  /* Tooltip box style */
+  .mc-tooltip {
+    @apply bg-mc-tooltip-bg text-white px-3 py-2 border-2 border-[#100010] relative z-50 rounded-sm;
+    box-shadow:
+      inset 2px 2px 0px 0px #280068,
+      inset -2px -2px 0px 0px #140034;
+  }
+
+  /* Minecraft Interactive Button */
+  .mc-button {
+    @apply relative bg-mc-bg text-white text-center cursor-pointer select-none py-2 px-4 transition-all duration-75 block text-lg mc-text-shadow outline-none;
+    border: 3px solid #000;
+    box-shadow:
+      inset 3px 3px 0px 0px #ffffff,
+      inset -3px -3px 0px 0px #555555;
+  }
+
+  .mc-button:hover,
+  .mc-button:focus-visible,
+  .mc-button.active {
+    @apply bg-[#58a14e] text-mc-yellow;
+    box-shadow:
+      inset 3px 3px 0px 0px #a4e590,
+      inset -3px -3px 0px 0px #386a31;
+  }
+
+  .mc-button:active {
+    @apply bg-mc-bg text-mc-yellow transition-none;
+    box-shadow:
+      inset 3px 3px 0px 0px #386a31,
+      inset -3px -3px 0px 0px #ffffff;
+    /* Optional: shift text slightly */
+    padding-top: calc(0.5rem + 2px);
+    padding-bottom: calc(0.5rem - 2px);
+  }
+
+  /* Custom inner slot class for inventory-style squares */
+  .mc-slot {
+    @apply bg-[#8b8b8b] relative w-10 h-10 inline-flex items-center justify-center;
+    box-shadow:
+      inset 2px 2px 0px 0px #373737,
+      inset -2px -2px 0px 0px #ffffff;
+  }
+
+  .mc-slot:hover {
+    @apply bg-[#58a14e];
+  }
+}
