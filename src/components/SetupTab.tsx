@@ -270,8 +270,8 @@ export const SetupTab = memo(function SetupTab() {
             <div className="flex flex-col gap-4 bg-[#747474] p-4 border-2 border-[#555555]">
               <h4 className="font-bold text-xl text-mc-yellow">② サーバーを追加</h4>
               <p>
-                右下にある<strong>「サーバーを追加（Add Server）」</strong>ボタンを押し、サーバーアドレスの欄にVRChatterサーバーのアドレス（IP）を入力して「完了」を押します。<br />
-                <span className="text-[#55FFFF] text-sm">※ サーバーアドレスはDiscord等の案内を確認してください！</span>
+                下にある<strong>「ダイレクト接続」または「サーバーを追加」</strong>ボタンを押してください。<br />
+                <span className="text-[#55FFFF] text-sm"></span>
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
                 <img src="/install-images/server-join-2.png" alt="サーバーを追加" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
@@ -281,7 +281,7 @@ export const SetupTab = memo(function SetupTab() {
             <div className="flex flex-col gap-4 bg-[#747474] p-4 border-2 border-[#555555]">
               <h4 className="font-bold text-xl text-mc-yellow">③ サーバーに接続！</h4>
               <p>
-                追加されたサーバーを選択し、<strong>「サーバーに接続（Join Server）」</strong>を押せば、いよいよVRChatterサーバーの世界に入れます！お疲れ様でした！
+                サーバーアドレスの欄に、<strong>220.158.22.4</strong>を入力して<strong>「サーバーに接続」</strong>を押せば、いよいよVRChatterサーバーの世界に入れます！お疲れ様でした！
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
                 <img src="/install-images/server-join-3.png" alt="サーバーに接続" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
