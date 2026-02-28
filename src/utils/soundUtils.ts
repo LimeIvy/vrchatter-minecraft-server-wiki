@@ -1,5 +1,5 @@
 // 最初に1回だけ読み込んでキャッシュしておく
-const clickAudio = new Audio("/click.mp3");
+const clickAudio = new Audio("./click.mp3");
 clickAudio.preload = "auto";
 
 export function playClickSound() {
