@@ -1,6 +1,7 @@
+import { memo } from 'react';
 import { playClickSound } from '../utils/soundUtils'
 
-export function SetupTab() {
+export const SetupTab = memo(function SetupTab() {
   return (
     <div className="flex flex-col gap-6">
       <h2 className="text-2xl font-bold border-b-4 border-[#8b8b8b] pb-2 inline-block">
@@ -292,4 +293,4 @@ export function SetupTab() {
       </div>
     </div>
   )
-}
+});

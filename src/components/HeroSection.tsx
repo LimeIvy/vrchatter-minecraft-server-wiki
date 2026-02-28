@@ -1,12 +1,13 @@
+import { memo, useMemo } from 'react';
 import { motion } from 'framer-motion';
 
-export function HeroSection() {
+export const HeroSection = memo(function HeroSection() {
   const text = "VRChatter Server Wiki";
 
   // Create an array of characters
-  const characters = Array.from(text);
+  const characters = useMemo(() => Array.from(text), [text]);
 
-  const containerVariants = {
+  const containerVariants = useMemo(() => ({
     hidden: { opacity: 1 },
     visible: {
       opacity: 1,
@@ -14,16 +15,16 @@ export function HeroSection() {
         staggerChildren: 0.08, // Adjust typing speed here
       }
     }
-  };
+  }), []);
 
-  const childVariants = {
+  const childVariants = useMemo(() => ({
     hidden: { opacity: 0, display: "none" },
     visible: {
       opacity: 1,
       display: "inline-block",
       transition: { duration: 0 }
     }
-  };
+  }), []);
   return (
     <div className="mc-panel flex flex-col items-center justify-center py-8 text-center relative overflow-hidden">
       <div className="absolute inset-0 bg-[#c6c6c6]/80 mix-blend-multiply z-0"></div>
@@ -53,4 +54,4 @@ export function HeroSection() {
       </div>
     </div>
   )
-}
+});

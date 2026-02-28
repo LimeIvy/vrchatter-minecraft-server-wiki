@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import type { ModItem, ModTab } from '../types'
 import { categoryLabels } from '../utils/modUtils'
 import { ModIcon } from './ModIcon'
@@ -12,7 +13,7 @@ interface ModsTabProps {
   error: string | null
 }
 
-export function ModsTab({
+export const ModsTab = memo(function ModsTab({
   modTab,
   setModTab,
   currentModTabs,
@@ -74,4 +75,4 @@ export function ModsTab({
       )}
     </div>
   )
-}
+});
