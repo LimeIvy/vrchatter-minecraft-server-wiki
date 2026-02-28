@@ -14,7 +14,7 @@ export const SetupTab = memo(function SetupTab() {
       </div>
 
       <div className="flex justify-center my-4">
-        <a href="./vrchatter-modpack.zip" download className="mc-button py-4 px-8 text-2xl flex items-center justify-center gap-3 w-full md:w-auto hover:text-white" onClick={playClickSound}>
+        <a href="https://github.com/LimeIvy/vrchatter-minecraft-server-wiki/releases/tag/modpack" target="_blank" rel="noopener noreferrer" className="mc-button py-4 px-8 text-2xl flex items-center justify-center gap-3 w-full md:w-auto hover:text-white" onClick={playClickSound}>
           <span className="text-3xl">📥</span>
           サーバー専用Modパックをダウンロード (ZIP)
         </a>
