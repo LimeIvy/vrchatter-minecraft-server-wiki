@@ -4,12 +4,15 @@ import { parseOverviewMap, parseMods } from './utils/modUtils'
 import { HeroSection } from './components/HeroSection'
 import { SetupTab } from './components/SetupTab'
 import { ModsTab } from './components/ModsTab'
+import { NewsTab } from './components/NewsTab'
+import { TipsTab } from './components/TipsTab'
 import { playClickSound } from './utils/soundUtils'
 
 export default function App() {
   const getInitialTopTab = (): TopTab => {
     const hash = window.location.hash.replace('#', '');
-    return hash === 'mods' ? 'mods' : 'setup';
+    const validTabs: TopTab[] = ['setup', 'mods', 'news', 'tips'];
+    return validTabs.includes(hash as TopTab) ? (hash as TopTab) : 'setup';
   };
 
   const getInitialModTab = (): ModTab => {
@@ -30,7 +33,8 @@ export default function App() {
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.replace('#', '');
-      if (hash === 'mods' || hash === 'setup') {
+      const validTabs: TopTab[] = ['setup', 'mods', 'news', 'tips'];
+      if (validTabs.includes(hash as TopTab)) {
         setTopTab(hash as TopTab);
       }
     };
@@ -87,38 +91,55 @@ export default function App() {
   )
 
   return (
-    <div className="w-full max-w-5xl mx-auto p-4 flex flex-col gap-6 text-[1.1rem]">
+    <div className="w-full max-w-[1400px] mx-auto p-4 flex flex-col gap-6 text-[1.1rem]">
       {/* Hero Section */}
       <HeroSection />
 
       {/* Main Container Container */}
       <div className="mc-panel p-2 md:p-6 shadow-[10px_10px_0px_0px_rgba(0,0,0,0.5)]">
         {/* Top Tabs */}
-        <div className="flex gap-2 border-b-4 border-[#555555] pb-4 mb-6">
+        <div className="flex flex-wrap gap-2 border-b-4 border-[#555555] pb-4 mb-6">
           <button
-            className={`mc-button flex-1 py-3 text-xl ${topTab === 'setup' ? 'active' : ''}`}
+            className={`mc-button flex-1 min-w-[120px] py-3 text-xl ${topTab === 'setup' ? 'active' : ''}`}
             onClick={() => {
               playClickSound();
               handleTopTabChange('setup');
             }}
           >
-            導入方法 (Setup)
+            導入方法
           </button>
           <button
-            className={`mc-button flex-1 py-3 text-xl ${topTab === 'mods' ? 'active' : ''}`}
+            className={`mc-button flex-1 min-w-[120px] py-3 text-xl ${topTab === 'mods' ? 'active' : ''}`}
             onClick={() => {
               playClickSound();
               handleTopTabChange('mods');
             }}
           >
-            Mod紹介 (Mods)
+            Mod紹介
+          </button>
+          <button
+            className={`mc-button flex-1 min-w-[120px] py-3 text-xl ${topTab === 'news' ? 'active' : ''}`}
+            onClick={() => {
+              playClickSound();
+              handleTopTabChange('news');
+            }}
+          >
+            ニュース
+          </button>
+          <button
+            className={`mc-button flex-1 min-w-[120px] py-3 text-xl ${topTab === 'tips' ? 'active' : ''}`}
+            onClick={() => {
+              playClickSound();
+              handleTopTabChange('tips');
+            }}
+          >
+            Tips・小技
           </button>
         </div>
 
         {/* Content Area */}
-        {topTab === 'setup' ? (
-          <SetupTab />
-        ) : (
+        {topTab === 'setup' && <SetupTab />}
+        {topTab === 'mods' && (
           <ModsTab
             modTab={modTab}
             setModTab={handleModTabChange}
@@ -128,6 +149,8 @@ export default function App() {
             error={error}
           />
         )}
+        {topTab === 'news' && <NewsTab />}
+        {topTab === 'tips' && <TipsTab />}
       </div>
       {/* Back to Top */}
       <div className="flex justify-center mt-2 mb-8">
@@ -144,3 +167,4 @@ export default function App() {
     </div>
   )
 }
+
