@@ -9,7 +9,7 @@ export function ModIcon({ slug, name }: { slug: string; name: string }) {
 
   return (
     <img
-      src={`./mod-icons/${slug}.png`}
+      src={`../mod-icons/${slug}.png`}
       alt={name}
       className="w-full h-full object-cover"
       loading="lazy"

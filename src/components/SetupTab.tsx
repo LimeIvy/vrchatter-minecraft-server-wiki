@@ -46,7 +46,7 @@ export const SetupTab = memo(function SetupTab() {
                 へアクセスし、画面にある<strong>「Download Standalone」</strong>をクリックしてインストーラーをダウンロードします。
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
-                <img src="./install-images/curseforge-install.png" alt="CurseForgeダウンロード画面" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
+                <img src="../install-images/curseforge-install.png" alt="CurseForgeダウンロード画面" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
               </div>
             </div>
 
@@ -56,7 +56,7 @@ export const SetupTab = memo(function SetupTab() {
                 ダウンロードされたインストーラーファイル（<code>CurseForge-Windows-Installer.exe</code>）をダブルクリックして開きます。
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
-                <img src="./install-images/curseforge-install-2.png" alt="CurseForgeインストーラー起動" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
+                <img src="../install-images/curseforge-install-2.png" alt="CurseForgeインストーラー起動" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
               </div>
             </div>
 
@@ -66,7 +66,7 @@ export const SetupTab = memo(function SetupTab() {
                 インストーラーが起動したら、画面の指示に従って言語を選択し、「次へ」を押します。基本的には支持の通り進めておけば大丈夫です。
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
-                <img src="./install-images/curseforge-installer.png" alt="CurseForge言語選択" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
+                <img src="../install-images/curseforge-installer.png" alt="CurseForge言語選択" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
               </div>
             </div>
 
@@ -76,7 +76,7 @@ export const SetupTab = memo(function SetupTab() {
                 途中で出てくる自動録画アプリのインストールについてですが、これはインストールしなくて大丈夫です。
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
-                <img src="./install-images/curseforge-installer-2.png" alt="CurseForgeインストール完了" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
+                <img src="../install-images/curseforge-installer-2.png" alt="CurseForgeインストール完了" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ export const SetupTab = memo(function SetupTab() {
                 を開き、中央の<strong>「デスクトップ用のJavaのダウンロード」</strong>をクリックします。
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
-                <img src="./install-images/java-install.png" alt="Javaダウンロード1" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
+                <img src="../install-images/java-install.png" alt="Javaダウンロード1" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
               </div>
             </div>
 
@@ -115,7 +115,7 @@ export const SetupTab = memo(function SetupTab() {
                 もう一度、<strong>「デスクトップ用のJavaのダウンロード」</strong>ボタンをクリックして、JavaのインストーラーをPCに保存します。
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
-                <img src="./install-images/java-install-2.png" alt="Javaダウンロード2" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
+                <img src="../install-images/java-install-2.png" alt="Javaダウンロード2" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
               </div>
             </div>
 
@@ -125,7 +125,7 @@ export const SetupTab = memo(function SetupTab() {
                 ダウンロードしたファイル（<code>jre-...-windows-x64.exe</code>）をダブルクリックして起動し、ライセンス条項を確認する画面を開きます。
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
-                <img src="./install-images/java-installer.png" alt="Javaインストーラー起動" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
+                <img src="../install-images/java-installer.png" alt="Javaインストーラー起動" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
               </div>
             </div>
 
@@ -135,7 +135,7 @@ export const SetupTab = memo(function SetupTab() {
                 「インストール」ボタンを押してしばらく待ちます。ゲージが溜まりきって「正常にインストールされました」と表示されれば、Javaの準備はOKです！
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
-                <img src="./install-images/java-installer-2.png" alt="Javaインストール完了" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
+                <img src="../install-images/java-installer-2.png" alt="Javaインストール完了" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
               </div>
             </div>
           </div>
@@ -163,7 +163,7 @@ export const SetupTab = memo(function SetupTab() {
                 を開きます。画面右側にある<strong>「Download Recommended（推奨版）」</strong>のInstallerをクリックしてください。
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
-                <img src="./install-images/forge-install.png" alt="Forgeプレページ" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
+                <img src="../install-images/forge-install.png" alt="Forgeプレページ" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
               </div>
             </div>
 
@@ -174,7 +174,7 @@ export const SetupTab = memo(function SetupTab() {
                 <span className="text-[#FF5555]">※ 次の画面で広告ページが出ることがあります。その場合は何もクリックせず5秒待ち、右上に「SKIP」が出たらそこを押してダウンロードしてください！</span>
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
-                <img src="./install-images/forge-install-2.png" alt="Forgeダウンロードボタン" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
+                <img src="../install-images/forge-install-2.png" alt="Forgeダウンロードボタン" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
               </div>
             </div>
 
@@ -184,7 +184,7 @@ export const SetupTab = memo(function SetupTab() {
                 ダウンロードした <code>.jar</code> ファイル（アイコンにコーヒーカップのマークが付いていることが多いです）をダブルクリックで開きます。
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
-                <img src="./install-images/forge-installer.png" alt="Forgeインストーラー起動" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
+                <img src="../install-images/forge-installer.png" alt="Forgeインストーラー起動" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
               </div>
               <p className="mt-2 p-3 bg-[#4c1e1e] border-l-4 border-[#ff5555]">
                 <span className="text-[#FF5555] font-bold">※もし.jarファイルが開けない場合は</span><br />
@@ -202,7 +202,7 @@ export const SetupTab = memo(function SetupTab() {
                 そのまま「OK」を押すとインストールが始まります。<br />しばらく待って「Successfully installed client profile Forge...」というような画面が出たら、無事Forgeの導入は完了です！
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
-                <img src="./install-images/forge-installer-2.png" alt="Forgeインストール完了" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
+                <img src="../install-images/forge-installer-2.png" alt="Forgeインストール完了" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
               </div>
             </div>
           </div>
@@ -227,7 +227,7 @@ export const SetupTab = memo(function SetupTab() {
                 Step1で入れたCurseForgeアプリを開き、上部の「Create Custom Profile」のすぐ隣にある<strong>「Import（インポート）」</strong>という小さなボタンをクリックします。
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
-                <img src="./install-images/curseforge-import.png" alt="インポートボタン" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
+                <img src="../install-images/curseforge-import.png" alt="インポートボタン" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
               </div>
             </div>
 
@@ -238,7 +238,7 @@ export const SetupTab = memo(function SetupTab() {
                 自動でプロファイル（VRChatter鯖用環境）が作られるので、できあがったらオレンジ色の<strong>「Play」</strong>ボタンを押してマイクラを起動しましょう。マルチプレイからサーバーに追加して大冒険のはじまりです！
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
-                <img src="./install-images/curseforge-import-2.png" alt="起動ボタン" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
+                <img src="../install-images/curseforge-import-2.png" alt="起動ボタン" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
               </div>
             </div>
           </div>
@@ -264,7 +264,7 @@ export const SetupTab = memo(function SetupTab() {
                 <span className="text-[#FF5555] text-sm">※ 初回起動時は「オンラインプレイの注意」が出る場合があります。「今後この画面を表示しない」にチェックを入れて進めてください。</span>
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
-                <img src="./install-images/server-join.png" alt="マルチプレイ選択" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
+                <img src="../install-images/server-join.png" alt="マルチプレイ選択" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
               </div>
             </div>
 
@@ -275,7 +275,7 @@ export const SetupTab = memo(function SetupTab() {
                 <span className="text-[#55FFFF] text-sm"></span>
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
-                <img src="./install-images/server-join-2.png" alt="サーバーを追加" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
+                <img src="../install-images/server-join-2.png" alt="サーバーを追加" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
               </div>
             </div>
 
@@ -285,7 +285,7 @@ export const SetupTab = memo(function SetupTab() {
                 サーバーアドレスの欄に、<strong>220.158.22.4</strong>を入力して<strong>「サーバーに接続」</strong>を押せば、いよいよVRChatterサーバーの世界に入れます！お疲れ様でした！
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
-                <img src="./install-images/server-join-3.png" alt="サーバーに接続" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
+                <img src="../install-images/server-join-3.png" alt="サーバーに接続" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
               </div>
             </div>
           </div>

@@ -2,7 +2,8 @@ import { memo, useMemo } from 'react';
 import { motion } from 'framer-motion';
 
 export const HeroSection = memo(function HeroSection() {
-  const text = "VRChatter Server Wiki";
+  const isAtm9 = window.location.pathname.includes('atm9');
+  const text = isAtm9 ? "VRChatter Server ATM9" : "VRChatter Server Wiki";
 
   // Create an array of characters
   const characters = useMemo(() => Array.from(text), [text]);
