@@ -9,29 +9,71 @@
       href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
       rel="stylesheet"
     />
-    <title>VRChatter鯖 MODガイド</title>
-
-    <!-- OGP (Open Graph Protocol) 設定 -->
-    <meta property="og:title" content="VRChatter Server Wiki" />
-    <meta
-      property="og:description"
-      content="Minecraft 1.20.1 Forge環境。VRChatterサーバーの導入手順とMod一覧をまとめています！"
-    />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://limeivy.github.io/vrchatter-minecraft-server-wiki/"
-    />
-    <meta
-      property="og:image"
-      content="https://limeivy.github.io/vrchatter-minecraft-server-wiki/ogp-image.png"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="theme-color" content="#58a14e" />
-    <script type="module" crossorigin src="./assets/index-COS5T4Mx.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CFHkRqdV.css">
+    <title>VRChatter鯖 MODガイド Hub</title>
+    <style>
+      body {
+        font-family: "DotGothic16", sans-serif;
+        background-color: #8b8b8b;
+        color: #3f3f3f;
+        margin: 0;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      .mc-panel {
+        background-color: #c6c6c6;
+        border: 4px solid black;
+        padding: 2rem;
+        box-shadow:
+          inset 4px 4px 0px 0px #ffffff,
+          inset -4px -4px 0px 0px #555555,
+          10px 10px 0px 0px rgba(0, 0, 0, 0.5);
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+        color: #3f3f3f;
+      }
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+      }
+      .btn {
+        display: block;
+        background-color: #8b8b8b;
+        color: white;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        margin: 1rem 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border: 4px solid black;
+        text-shadow: 2px 2px 0px #3f3f3f;
+        box-shadow:
+          inset 4px 4px 0px 0px #c6c6c6,
+          inset -4px -4px 0px 0px #555555;
+        transition: transform 0.1s;
+      }
+      .btn:hover {
+        background-color: #9b9b9b;
+        transform: translateY(2px);
+      }
+    </style>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="mc-panel">
+      <h1>VRChatterサーバー Wiki</h1>
+      <p>遊びたいサーバーを選んでください！</p>
+      <a href="./vrchatter-main/" class="btn">メインサーバー (1.20.1)</a>
+      <a href="./vrchatter-atm9/" class="btn">ATM9サーバー (新規)</a>
+    </div>
   </body>
 </html>
