@@ -2,6 +2,7 @@ import { memo } from 'react';
 import { playClickSound } from '../utils/soundUtils'
 
 export const SetupTab = memo(function SetupTab() {
+  const isAtm9 = window.location.pathname.includes('atm9');
   return (
     <div className="flex flex-col gap-6">
       <h2 className="text-2xl font-bold border-b-4 border-[#8b8b8b] pb-2 inline-block">
@@ -11,7 +12,7 @@ export const SetupTab = memo(function SetupTab() {
         VRChatter鯖へようこそ！<br />
         ここでは、皆さんがサーバーへ遊びに来れるよう、一つずつ丁寧に導入手順を解説していきます。<br />
         まずは、サーバー専用のModパック（ZIP形式）をダウンロードします！<br />
-        下のボタンの遷移先ページから、VRChatter.zipをダウンロードしておきましょう！
+        下のボタンの遷移先ページから、{isAtm9 ? "VRChatter-All-the-Mods-9.zip" : "VRChatter.zip"}をダウンロードしておきましょう！
       </div>
 
       <div className="flex justify-center my-4">
@@ -264,7 +265,7 @@ export const SetupTab = memo(function SetupTab() {
                 <span className="text-[#FF5555] text-sm">※ 初回起動時は「オンラインプレイの注意」が出る場合があります。「今後この画面を表示しない」にチェックを入れて進めてください。</span>
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
-                <img src="../install-images/server-join.png" alt="マルチプレイ選択" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
+                <img src={`../install-images/${isAtm9 ? 'server-join-atm9.png' : 'server-join.png'}`} alt="マルチプレイ選択" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
               </div>
             </div>
 
@@ -275,7 +276,7 @@ export const SetupTab = memo(function SetupTab() {
                 <span className="text-[#55FFFF] text-sm"></span>
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
-                <img src="../install-images/server-join-2.png" alt="サーバーを追加" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
+                <img src={`../install-images/${isAtm9 ? 'server-join-atm9-2.png' : 'server-join-2.png'}`} alt="サーバーを追加" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
               </div>
             </div>
 
@@ -285,7 +286,7 @@ export const SetupTab = memo(function SetupTab() {
                 サーバーアドレスの欄に、<strong>220.158.22.4</strong>を入力して<strong>「サーバーに接続」</strong>を押せば、いよいよVRChatterサーバーの世界に入れます！お疲れ様でした！
               </p>
               <div className="w-full bg-[#3d424b] p-4 border-2 border-[#1e1e24] shadow-[inset_2px_2px_0px_0px_#6b7381,inset_-2px_-2px_0px_0px_#272a31]">
-                <img src="../install-images/server-join-3.png" alt="サーバーに接続" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
+                <img src={`../install-images/${isAtm9 ? 'server-join-atm9-3.png' : 'server-join-3.png'}`} alt="サーバーに接続" className="block max-h-96 lg:max-h-[500px] w-auto mx-auto object-contain bg-transparent" />
               </div>
             </div>
           </div>
